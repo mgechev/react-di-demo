@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/* ----------------------------------------------------
+* reset style
+* -------------------------------------------------- */
+/* for new HTML5 elements */
+section, article, aside, hgroup, header, footer, nav, figure, figcaption, summary {
+  display: block; }
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", "ＭＳ Ｐゴシック", Verdana, Geneva, Arial, Helvetica;
+  word-wrap: break-word;
+  word-break: break-all; }
+
+body, div,
+dl, dt, dd,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, code,
+form, fieldset, legend, input, textarea,
+p, blockquote,
+th, td {
+  margin: 0;
+  padding: 0; }
+
+address, cite, dfn, em, strong, var, th, ins, del, samp {
+  font-weight: normal;
+  font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+table {
+  font-size: inherit;
+  font: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+li {
+  list-style-type: none; }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%; }
+
+pre, code, kbd, samp, tt {
+  font-family: monospace;
+  *font-size: 108%;
+  line-height: 100%; }
+
+caption, th {
+  text-align: left; }
+
+fieldset,
+a img {
+  border: none; }
+
+hr, legend {
+  display: none; }
+
+object,
+embed {
+  vertical-align: top; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  display: inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* End hide from IE-mac */
+.Wrapper__title {
+  font-size: 300%;
+  text-align: center;
+  padding: 50px 0;
+  font-family: 'Antic Slab', serif; }
+
+.Wrapper__subTitle {
+  font-size: 200%;
+  text-align: center;
+  padding: 50px 0 30px;
+  font-family: 'Antic Slab', serif; }
+
+.Wrapper__howToPlay {
+  width: 700px;
+  line-height: 2;
+  margin: 0 auto 50px; }
+
+.MineSweeper {
+  position: relative;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 45px 10px 10px;
+  margin: 0 auto; }
+  .MineSweeper.easy {
+    width: 310px; }
+  .MineSweeper.normal {
+    width: 490px; }
+  .MineSweeper.hard {
+    width: 900px; }
+  .MineSweeper__level {
+    text-align: center;
+    padding: 10px; }
+    .MineSweeper__level label {
+      margin: 0 10px; }
+    .MineSweeper__level input[type=radio] {
+      margin-right: 5px; }
+  .MineSweeper__flagNum {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: url("../images/icn_flag_01.png") no-repeat left center;
+    padding-left: 25px; }
+  .MineSweeper__time {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: url("../images/icn_clock_01.png") no-repeat left center;
+    padding-left: 30px; }
+  .MineSweeper__face {
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    margin-left: -17px;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #bbb; }
+    .MineSweeper__face .button {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #fff #999 #999 #fff;
+      height: 100%;
+      display: block; }
+    .MineSweeper__face .playing {
+      background: url("../images/icn_face_01.png") no-repeat center center, #ccc; }
+    .MineSweeper__face .clear {
+      background: url("../images/icn_face_02.png") no-repeat center center, #ccc; }
+    .MineSweeper__face .gameover {
+      background: url("../images/icn_face_03.png") no-repeat center center, #ccc; }
+
+.Table {
+  border: 1px solid #ccc;
+  margin: 0 auto; }
+
+.Cell {
+  border: 1px solid #bbb;
+  font-size: 20px;
+  width: 30px;
+  height: 28px;
+  text-align: center;
+  vertical-align: middle; }
+  .Cell__cover {
+    background-color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #999 #999 #fff;
+    height: 100%; }
+    .Cell__cover--opened {
+      background-color: #ddd;
+      border: 1px solid #ddd; }
+  .Cell__number0 {
+    color: #ddd; }
+  .Cell__number1 {
+    color: blue; }
+  .Cell__number2 {
+    color: green; }
+  .Cell__number3 {
+    color: red; }
+  .Cell__number4 {
+    color: #2b4b65; }
+  .Cell__number5 {
+    color: #4f2702; }
+  .Cell__number6 {
+    color: #0b615e; }
+  .Cell__number7 {
+    color: black; }
+  .Cell__number8 {
+    color: #666; }
+  .Cell__flag {
+    background: url("../images/icn_flag_01.png") no-repeat center center;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: block;
+    height: 100%; }
+  .Cell__bomb {
+    background: url("../images/icn_bomb_01.png") no-repeat center center;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: block;
+    height: 100%; }

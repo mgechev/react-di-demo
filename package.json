@@ -1,0 +1,36 @@
+{
+  "name": "react-minesweeper",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@types/react": "^15.0.4",
+    "babelify": "^6.1.1",
+    "browserify": "^10.2.1",
+    "gulp": "^3.8.11",
+    "gulp-webserver": "^0.9.1",
+    "react": "^0.13.3",
+    "tsify": "^3.0.0",
+    "typescript": "^2.1.5",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "build": "browserify -d -t babelify js/app.js -o js/bundle.js",
+    "watch": "watchify -d js/app.tsx --plugin [ tsify --project tsconfig.json ] -o js/bundle.js -v"
+  },
+  "license": "MIT",
+  "description": "MineSweeper",
+  "main": "bundle.js",
+  "dependencies": {
+    "babelify": "~6.1.2",
+    "browserify": "~10.2.4",
+    "gulp": "~3.9.0",
+    "gulp-sass": "~2.0.1",
+    "gulp-webserver": "~0.9.1",
+    "injection-js": "^1.0.0",
+    "react": "15.4.2",
+    "react-dom": "^15.4.2",
+    "reflect-metadata": "^0.1.9",
+    "vinyl-source-stream": "~1.1.0",
+    "watchify": "~3.2.2"
+  },
+  "author": "kazshiba"
+}

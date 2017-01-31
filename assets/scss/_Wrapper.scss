@@ -1,0 +1,22 @@
+.Wrapper {
+
+    &__title {
+        font-size: 300%;
+        text-align: center;
+        padding: 50px 0;
+        font-family: 'Antic Slab', serif;
+    }
+
+    &__subTitle {
+        font-size: 200%;
+        text-align: center;
+        padding: 50px 0 30px;
+        font-family: 'Antic Slab', serif;
+    }
+
+    &__howToPlay {
+        width: 700px;
+        line-height: 2;
+        margin: 0 auto 50px;;
+    }
+}
